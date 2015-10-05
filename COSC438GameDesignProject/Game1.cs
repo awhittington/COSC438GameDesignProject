@@ -107,6 +107,17 @@ namespace COSC438GameDesignProject
                 this.STATICSPRITES = value;
             }
         }
+        public GridLayout Grid
+        {
+            get
+            {
+                return grid;
+            }
+            set
+            {
+                grid = value;
+            }
+        }
         //Constructor
         public Game1()
         {                       
@@ -153,8 +164,7 @@ namespace COSC438GameDesignProject
         3.) Implement Collision Detection for all active collision boxes (Within Phyics Class)
         */
         protected override void Update(GameTime gameTime)
-        {
-         
+        {        
             //Runs all methods relted to handling user input events.
             //ProcessInputFunctions has a chaining effect to all other detections
             physicsEngine.ProcessInputFunctions(Mouse.GetState(),Keyboard.GetState(),gameTime);
@@ -221,10 +231,6 @@ namespace COSC438GameDesignProject
                 if(STATICSPRITES.ContainsKey(y) && STATICSPRITES[y].Item1 == -1)
                 {
                     spriteBatch.Draw(STATICSPRITES[y].Item2, STATICSPRITES[y].Item3, Color.White);
-                }
-                else if (STATICSPRITES.ContainsKey(y))
-                {
-                    
                 }
             }
             spriteBatch.Draw(STATICSPRITES[physicsEngine.ACTIVELEVELFunc + STATICOFFSET].Item2, STATICSPRITES[physicsEngine.ACTIVELEVELFunc + STATICOFFSET].Item3, Color.White);

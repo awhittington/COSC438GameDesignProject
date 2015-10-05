@@ -90,7 +90,7 @@ namespace COSC438GameDesignProject
             velocity.X = 0;
             velocity.Y = 0;
             jumpState = false;
-            genMaps = new GridLayout(gameObj);
+            genMaps = gameObj.Grid;
             //Load relevant level
             switch (ACTIVELEVEL)
             {

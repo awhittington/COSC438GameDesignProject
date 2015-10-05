@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 namespace COSC438GameDesignProject
 {
-    class GridLayout
+    public class GridLayout
     {
         private const int SIZE = 40;
         //All Levels Standardized to 800W, 400H
