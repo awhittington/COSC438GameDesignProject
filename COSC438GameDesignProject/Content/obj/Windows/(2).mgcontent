@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Cod/Documents/Visual Studio 2012/Projects/COSC438GameDesignProject/COSC438GameDesignProject/COSC438GameDesignProject/Content/CaveTop.png</File>
+    <File>C:/Users/Cod/Documents/Visual Studio 2012/Projects/COSC438GameDesignProject/COSC438GameDesignProject/COSC438GameDesignProject/Content/cursorSprite.png</File>
+    <File>C:/Users/Cod/Documents/Visual Studio 2012/Projects/COSC438GameDesignProject/COSC438GameDesignProject/COSC438GameDesignProject/Content/End.png</File>
+    <File>C:/Users/Cod/Documents/Visual Studio 2012/Projects/COSC438GameDesignProject/COSC438GameDesignProject/COSC438GameDesignProject/Content/p1Placeholder.png</File>
+    <File>C:/Users/Cod/Documents/Visual Studio 2012/Projects/COSC438GameDesignProject/COSC438GameDesignProject/COSC438GameDesignProject/Content/Rocks.png</File>
+    <File>C:/Users/Cod/Documents/Visual Studio 2012/Projects/COSC438GameDesignProject/COSC438GameDesignProject/COSC438GameDesignProject/Content/background.jpg</File>
+    <File>C:/Users/Cod/Documents/Visual Studio 2012/Projects/COSC438GameDesignProject/COSC438GameDesignProject/COSC438GameDesignProject/Content/Inventory.png</File>
+  </SourceFiles>
+</SourceFileCollection>
