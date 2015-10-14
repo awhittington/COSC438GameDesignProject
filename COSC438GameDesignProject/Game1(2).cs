@@ -128,6 +128,7 @@ namespace COSC438GameDesignProject
         //TODO Do we need this for our game? :/
         protected override void UnloadContent()
         {
+            Content.Unload();
             // TODO: Unload any non ContentManager content here
         }
         /* TODO
