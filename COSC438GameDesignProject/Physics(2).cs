@@ -100,11 +100,19 @@ namespace COSC438GameDesignProject
             //Right Movement Controlled By D
             if (k.IsKeyDown(Keys.D) && gameObj.playerXPOSFunc < graphics.PreferredBackBufferWidth && !WallDetection())
             {
+                /*
+                set to right-facing version of sprite
+                set x in spriteSheet rectangle to 0
+                */
                 gameObj.playerXPOSFunc = playerXPos += 5;
             }
             //Left Movement Controlled by A
             if (k.IsKeyDown(Keys.A) && gameObj.playerXPOSFunc > 0 && !WallDetection())
             {
+                /*
+                set to left-facing version of sprite
+                set x in spriteSheet rectangle to 40
+                */
                 gameObj.playerXPOSFunc = playerXPos -= 5;
             }
             //TODO: OPEN INVENTORY SPRITE SCREEN(LOAD TO FRAME)
@@ -116,7 +124,10 @@ namespace COSC438GameDesignProject
                 sprites.End();
             }
             //TODO ADD JUMP FUNCTIONALITY
-            //TODO Determine if we are allowing characters to move up, or invoking gravity.
+            /*
+            when jumping, set y in spriteSheet rectangle to 80
+            detect landing (i.e., bottom-bound collision) and reset y in spriteSheet rectangle to 0
+            */
             if (k.IsKeyDown(Keys.Space))
             {
                 // playerXPOS -= 5;
