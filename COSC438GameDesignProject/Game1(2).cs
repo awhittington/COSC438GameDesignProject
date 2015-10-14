@@ -30,6 +30,10 @@ namespace COSC438GameDesignProject
         private int mouseY;
         private int playerXPOS;
         private int playerYPOS;
+        /*
+        //sprite size will remain constant, but placement within the sprite sheet will be determined by the following coordinates
+        private int spriteSourceX, spriteSourceY; 
+        */
         //Getters & Setters
         public Texture2D getINV
         {
@@ -82,6 +86,30 @@ namespace COSC438GameDesignProject
                 this.playerYPOS = value;
             }
         }
+        /*
+        public int spriteSourceXFunc
+        {
+            get
+            {
+                return spriteSourceX;
+            }
+            set
+            {
+                this.spriteSourceX = value;
+            }
+        }
+        public int spriteSourceYFunc
+        {
+            get
+            {
+                return spriteSourceY;
+            }
+            set
+            {
+                this.spriteSourceY = value;
+            }
+        }
+        */
         public Dictionary<int, Tuple<int, Texture2D, Rectangle>> spriteContainerFunc
         {
             get
@@ -155,6 +183,7 @@ namespace COSC438GameDesignProject
             spriteBatch.Draw(endImg, new Rectangle(graphics.PreferredBackBufferWidth - endImg.Width, graphics.PreferredBackBufferHeight - endImg.Height, endImg.Width, endImg.Height), Color.White);
             spriteBatch.Draw(rocks, new Rectangle(0, graphics.PreferredBackBufferHeight - rocks.Height, rocks.Width, rocks.Height), Color.White);
             spriteBatch.Draw(activePlayer, new Rectangle(playerXPOS, playerYPOS - 40, 40, 40), Color.White);
+            //spriteBatch.Draw(activePlayer, new Vector2(playerXPOS, playerYPOS), new Rectangle(spriteSourceX, spriteSourceY, 40, 80), Color.White);
             spriteBatch.Draw(cursorDummy, new Rectangle(mouseX, mouseY, 15, 15), Color.White);
             //Based on Map Information this function loads the Statically placed sprites.
             drawActiveSprites();           
